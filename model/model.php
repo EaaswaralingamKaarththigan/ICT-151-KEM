@@ -30,14 +30,34 @@ function openDBconversion(){
 /* Cette fonction permettra de pouvoir vérifier si les identifiants
 de la session sont valides*/
 function checklogin($nom_util, $mdp){
-    $userTable = file_get_contents("model/useracc.json");
-    $userTable = json_decode($userTable, true);
+    define('DB_SERVER', 'localhost');
+    define('DB_USERNAME', 'root2');
+    define('DB_PASSWORD', 'pa$$w0rd');
+    define('DB_DATABASE', 'snows');
+    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
-    // va servir à aller rechercher les identifiants dans le fichier json
-    foreach ($userTable as $user) {
-        if ($user['user'] == $nom_util && $user['password'] == $mdp) {
-            return true;
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        // username and password sent from form
+
+        $myusername = mysqli_real_escape_string($db,$_POST['username']);
+        $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+
+        $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+        $result = mysqli_query($db,$sql);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $active = $row['active'];
+
+        $count = mysqli_num_rows($result);
+
+        // If result matched $myusername and $mypassword, table row must be 1 row
+
+        if($count == 1) {
+            session_register("myusername");
+            $_SESSION['login_user'] = $myusername;
+
+            header("location: welcome.php");
+        }else {
+            $error = "Your Login Name or Password is invalid";
         }
     }
-    return false;
 }
