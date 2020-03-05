@@ -17,6 +17,8 @@ if (isset($_GET{'action'})){
             break;
         case 'logout' :
             logout(); // Accède au page du logout
+        case 'login-success':
+            loginsuccess();
             break;
 
         default :
