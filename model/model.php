@@ -10,6 +10,7 @@
  */
 
 function openDBconversion(){
+    $dbConnector = null;
 
     $sqlDriver = 'mysql';
     $hostname = 'localhost';
@@ -29,6 +30,7 @@ function openDBconversion(){
 }
 
 function executeQuery($query){
+    $queryResult = null;
     $databaseConnection = openDBconversion();
     if ($databaseConnection != null){
         $statement = $databaseConnection->prepare($query);
@@ -36,6 +38,7 @@ function executeQuery($query){
         $queryResult = $statement->fetchAll();
     }
     $databaseConnection = null;
+
     return $queryResult;
 }
 
@@ -43,14 +46,25 @@ function executeQuery($query){
 de la session sont valides*/
 function checklogin($username, $password){
 
-    $query = "SELECT userEmailAddress, userPsw FROM snows;";
+    $query = "SELECT userEmailAddress, userPsw FROM users;";
     $result = executeQuery($query);
-
 
     foreach ($result as $user) {
         if ($username == $user['userEmailAddress'] && $password == $user['userPsw']) {
-
+            echo 'ok';
+            require "view/loginsuccess.php";
+        }
+        else {
+            echo 'no ok';
+            $_GET["action"] = "login";
+            require "view/login.php";
         }
     }
 
+}
+
+function register($hello, $hello2){
+    $query = "INSERT INTO users('id', 'userEmailAddress', 'userPsw')
+              VALUE ('2', $hello, $hello2)";
+    $result = executeQuery($query);
 }

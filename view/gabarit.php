@@ -48,10 +48,6 @@
 </head>
 
 <body id="pageBody">
-<?php
-echo   "Email :". $username = @$_POST['email'];
-echo  "Mot de passe". $password = @$_POST['password'];
-?>
 
 
 <div id="divBoxed" class="container">
