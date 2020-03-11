@@ -68,3 +68,10 @@ function register($hello, $hello2){
               VALUE ('2', $hello, $hello2)";
     $result = executeQuery($query);
 }
+
+function getSnows(){
+    $query = 'SELECT * FROM snows.snows;';
+    $result = executeQuery($query);
+
+    return $result;
+}

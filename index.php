@@ -17,9 +17,17 @@ if (isset($_GET{'action'})){
             break;
         case 'logout' :
             logout(); // Accède au page du logout
+            break;
         case 'login-success':
             loginsuccess();
             break;
+        case 'snowsvente':
+            snowsvente();
+            break;
+        case 'snowsachat':
+            snowsachat();
+            break;
+
 
         default :
             home(); // Page de l'accueil par défaut

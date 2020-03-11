@@ -33,7 +33,8 @@
     <!--[if IE 7]>
     <link rel="stylesheet" href="view/content/scripts/fontawesome/css/font-awesome-ie7.min.css">
     <![endif]-->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="view/content/scripts/carousel/style.css" rel="stylesheet" type="text/css"/>
     <link href="view/content/scripts/camera/css/camera.css" rel="stylesheet" type="text/css"/>
 
@@ -48,7 +49,6 @@
 </head>
 
 <body id="pageBody">
-
 
 <div id="divBoxed" class="container">
 
@@ -70,8 +70,11 @@
                                 data-toggle="collapse" data-target=".nav-collapse">
                             NAVIGATION <span class="icon-chevron-down icon-white"></span>
                         </button>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav nav-pills ddmenu">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills menu">
 
                                 <!-- HOME BUTTON -->
                                 <li <?php if (($_GET['action'] == "home") || !isset($_GET['action'])) : ?>
@@ -83,17 +86,27 @@
                                 <li <?php if (($_GET['action'] == 'login') || ($_GET['action'] == 'register')) : ?>
                                     class="active"
                                 <?php endif ?>>
-                                    <a href="index.php?action=<?php if (isset($_SESSION['mail'])) : ?>logout<?php else: ?>login<?php endif?>">
-                                        <?php if (!isset($_SESSION['mail'])) : ?>
+                                    <a href="index.php?action=<?php if (isset($_SESSION['pseudo'])) : ?>logout<?php else: ?>login<?php endif ?>">
+                                        <?php if (!isset($_SESSION['pseudo'])) : ?>
                                             Login
                                         <?php endif ?>
-                                        <?php if (isset($_SESSION['mail'])) : ?>
+                                        <?php if (isset($_SESSION['pseudo'])) : ?>
                                             Log out
                                         <?php endif ?>
                                     </a></li>
 
                                 <!-- PRODUCT BUTTON -->
-                                <li><a href="content/services.html">Produits</a></li>
+                                <li<?php if ($_GET['action'] == 'snowsvente') : ?>
+                                    class="active"
+                                <?php endif; ?>>
+                                    <a href="index.php?action=snowsvente">Snows</a></li>
+
+                                <!-- PRODUCT BUTTON -->
+                                <li<?php if ($_GET['action'] == 'snowsachat') : ?>
+                                    class="active"
+                                <?php endif; ?>>
+                                    <a href="index.php?action=snowsachat">Snows achat</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -106,9 +119,9 @@
     </div>
     <?php
     //Affiche l'email de l'utilisateur
-    if (isset($_SESSION['mail'])){
+    if (isset($_SESSION['pseudo'])) {
         echo "<p align='right'; style='font-size: 25px; margin-right: 10px; color: lightcoral'>";
-        echo "E-mail : ".$_SESSION['mail'];
+        echo "Pseudo : " . $_SESSION['pseudo'];
         echo "</p>";
     }
     ?>

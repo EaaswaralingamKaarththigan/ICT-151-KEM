@@ -40,3 +40,15 @@ function loginsuccess()
     $_GET["action"] = "loginsuccess";
     require "view/loginsuccess.php";
 }
+
+function snowsvente(){
+    $_GET["action"] = "snowsvente";
+    $snows = getSnows();
+    require "view/snowsSeller.php";
+}
+
+function snowsachat(){
+    $_GET["action"] = "view/snowsClient.php";
+    $snows = getSnows();
+    require "view/snowsClient.php";
+}

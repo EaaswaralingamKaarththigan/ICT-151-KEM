@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/view/content/images/B101.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/B101_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/B126.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/B126_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/B327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/B327_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K067.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K067_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K266.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K266_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K409.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/K409_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/N100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/N100_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/N754.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/N754_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/P067.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/P067_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/P165.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/content/images/P165_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/snowsClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/snowsSeller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/snowsSellerCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controler/controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/controler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gabarit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/loginsuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginsuccess.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +56,13 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -44,6 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/php/php.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -51,6 +82,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaarththigan.EAASWAR\Documents\GitHub v2\ICT-133\ICT-151-KEM\view\content\images" />
       <recent name="C:\Users\Kaarththigan.EAASWAR\Documents\GitHub v2\ICT-133\ICT-151-KEM" />
     </key>
   </component>
@@ -99,7 +131,9 @@
       <workItem from="1583326323399" duration="6344000" />
       <workItem from="1583411621515" duration="753000" />
       <workItem from="1583412771451" duration="12000" />
-      <workItem from="1583487808798" duration="4759000" />
+      <workItem from="1583487808798" duration="4786000" />
+      <workItem from="1583744503415" duration="62000" />
+      <workItem from="1583931836485" duration="6325000" />
     </task>
     <servers />
   </component>
