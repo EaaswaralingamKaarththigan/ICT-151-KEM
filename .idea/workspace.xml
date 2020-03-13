@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b2ab00-b284-48bf-95b3-e5b3b6546a1d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/view/content/images/B101.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/B101_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/B126.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/B126_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/B327.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/B327_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K067.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K067_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K266.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K266_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K409.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/K409_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/N100.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/N100_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/N754.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/N754_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/P067.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/P067_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/P165.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/content/images/P165_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/snowsClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/snowsSeller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/snowsSellerCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controler/controler.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/controler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gabarit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/snowsClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/snowsClient.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +107,9 @@
       <workItem from="1583412771451" duration="12000" />
       <workItem from="1583487808798" duration="4786000" />
       <workItem from="1583744503415" duration="62000" />
-      <workItem from="1583931836485" duration="6325000" />
+      <workItem from="1583931836485" duration="6576000" />
+      <workItem from="1584017358038" duration="89000" />
+      <workItem from="1584095608684" duration="2459000" />
     </task>
     <servers />
   </component>
