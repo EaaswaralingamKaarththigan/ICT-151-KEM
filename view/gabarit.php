@@ -55,7 +55,7 @@
     <div class="transparent-bg"
          style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
 
-    <div class="divPanel notop nobottom">
+    <div class="divPanel">
         <div class="row-fluid">
             <div class="span12">
 
@@ -83,7 +83,7 @@
                                     <a href="index.php?action=home">Accueil</a></li>
 
                                 <!-- LOGIN BUTTON-->
-                                <li <?php if (($_GET['action'] == 'login') || ($_GET['action'] == 'register')) : ?>
+                                <li <?php if (($_GET['action'] == 'login') || ($_GET['action'] == 'login')) : ?>
                                     class="active"
                                 <?php endif ?>>
                                     <a href="index.php?action=<?php if (isset($_SESSION['pseudo'])) : ?>logout<?php else: ?>login<?php endif ?>">
@@ -106,6 +106,12 @@
                                     class="active"
                                 <?php endif; ?>>
                                     <a href="index.php?action=snowsachat">Snows achat</a></li>
+
+                                <!-- PRODUCT BUTTON -->
+                                <li<?php if ($_GET['action'] == 'register') : ?>
+                                    class="active"
+                                <?php endif; ?>>
+                                    <a href="index.php?action=register">Register</a></li>
 
                             </ul>
                         </div>

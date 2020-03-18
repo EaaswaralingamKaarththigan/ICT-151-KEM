@@ -47,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -110,6 +110,8 @@
       <workItem from="1583931836485" duration="6576000" />
       <workItem from="1584017358038" duration="89000" />
       <workItem from="1584095608684" duration="2459000" />
+      <workItem from="1584539844554" duration="2000" />
+      <workItem from="1584539861844" duration="3204000" />
     </task>
     <servers />
   </component>

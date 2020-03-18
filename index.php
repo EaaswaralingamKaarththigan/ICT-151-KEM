@@ -27,6 +27,9 @@ if (isset($_GET{'action'})){
         case 'snowsachat':
             snowsachat();
             break;
+        case 'register':
+            register();
+            break;
 
 
         default :

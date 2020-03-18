@@ -24,6 +24,8 @@ $titre = "Rent A Snow - Acceuil";
             détail</a>
     </div>
 
+    <button></button>
+
 <?php endforeach; ?>
 
 

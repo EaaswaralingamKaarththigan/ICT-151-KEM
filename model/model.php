@@ -63,14 +63,21 @@ function checklogin($username, $password){
 
 }
 
-function register($hello, $hello2){
-    $query = "INSERT INTO users('id', 'userEmailAddress', 'userPsw')
-              VALUE ('2', $hello, $hello2)";
-    $result = executeQuery($query);
+function addUser($username, $password, $mail){
+        $query = "INSERT INTO snows.users (userEmailAddress, userPsw, pseudo) VALUES ('$mail', '$password', '$username');";
+        $result = executeQuery($query);
+        return $result;
 }
 
 function getSnows(){
     $query = 'SELECT * FROM snows.snows;';
+    $result = executeQuery($query);
+
+    return $result;
+}
+
+function updateSnow($snowName){
+    $query ="UPDATE snows.snows SET snowsname = $snowName";
     $result = executeQuery($query);
 
     return $result;
