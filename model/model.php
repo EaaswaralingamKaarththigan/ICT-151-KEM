@@ -77,8 +77,22 @@ function getSnows(){
 }
 
 function updateSnow($snowName){
-    $query ="UPDATE snows.snows SET snowsname = $snowName";
+    $query ="UPDATE snows.snows SET snowsname = $snowName;";
     $result = executeQuery($query);
 
     return $result;
 }
+
+function deleteSnow($snowName){
+    $query = "DELETE from snows WHERE snowsname = $snowName;";
+    $result = executeQuery($query);
+
+    return $result;
+}
+
+function addSnow($snowname){
+    $query = "INSERT INTO snows.users (snowsname) VALUES ($snowname);";
+    $result = executeQuery($query);
+    return $result;
+}
+

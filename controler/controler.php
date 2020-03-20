@@ -72,3 +72,7 @@ function register()
         require_once "view/register.php";
     }
 }
+
+function CreateSnow(){
+
+}
